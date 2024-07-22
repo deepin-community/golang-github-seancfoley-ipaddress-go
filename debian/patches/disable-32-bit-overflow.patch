@@ -1,0 +1,12 @@
+--- a/ipaddr/test/macaddrtest.go
++++ b/ipaddr/test/macaddrtest.go
+@@ -579,7 +579,8 @@
+ 	t.testMACValues([]int{1, 2, 3, 4, 5, 6, 7, 8}, "72623859790382856")
+ 	t.testMACValues(sixZeros[:], "0")
+ 	t.testMACValues(eightZeros[:], "0")
+-	t.testMACValues([]int{0xff, 0xff, 0xff, 0xff, 0xff, 0xff}, strconv.Itoa(0xffffffffffff))
++	forty8 := new(big.Int).SetUint64(0xffffffffffff)
++	t.testMACValuesBig([]int{0xff, 0xff, 0xff, 0xff, 0xff, 0xff}, forty8.String(), "-1")
+ 
+ 	sixty4 := new(big.Int).SetUint64(0xffffffffffffffff)
+ 	//BigInteger thirtyTwo = BigInteger.valueOf(0xffffffffL);

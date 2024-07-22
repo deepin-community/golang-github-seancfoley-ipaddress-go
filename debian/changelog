@@ -1,5 +1,20 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-seancfoley-ipaddress-go (1.5.4-3) unstable; urgency=medium
 
-  * Initial release
+  * Team Upload.
+  * Add patch to fix FTBFS on 32-bit archs
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Nilesh Patra <nilesh@debian.org>  Fri, 03 Nov 2023 23:15:45 +0530
+
+golang-github-seancfoley-ipaddress-go (1.5.4-2) unstable; urgency=medium
+
+  * Team Upload.
+    + Source-only upload for testing migration.
+
+ -- Nilesh Patra <nilesh@debian.org>  Fri, 03 Nov 2023 01:07:12 +0530
+
+golang-github-seancfoley-ipaddress-go (1.5.4-1) unstable; urgency=medium
+
+  [ M Hickford, Nilesh Patra ]
+  * Initial release (Closes: #1037446)
+
+ -- M Hickford <mirth.hickford@gmail.com>  Wed, 01 Nov 2023 23:02:03 +0530
