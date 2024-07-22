@@ -1,0 +1,3 @@
+# False positive, this is code, just long in length
+golang-github-seancfoley-ipaddress-go source: very-long-line-length-in-source-file 515 > 512 [ipaddr/doc.go:34]
+golang-github-seancfoley-ipaddress-go source: very-long-line-length-in-source-file 521 > 512 [ipaddr/test/specialtypestest.go:64]
